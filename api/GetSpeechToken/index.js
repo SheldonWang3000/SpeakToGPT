@@ -21,7 +21,7 @@ module.exports = async function (context) {
   } catch (err) {
     context.res = {
       status: 401,
-      body: "There was an error authorizing your speech key.",
+      body: "There was an error authorizing your speech key." + err,
     };
   }
 };
