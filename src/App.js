@@ -27,7 +27,6 @@ function App() {
         speechConfig,
         audioConfig
       );
-      console.log(recognizer);
       recognizer.recognizeOnceAsync((result) => {
         let displayText;
         if (result.reason === ResultReason.RecognizedSpeech) {
